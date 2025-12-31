@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: linear-gradient(135deg, #FFF5EB 0%, #FFE5CC 50%, #F5EBE0 100%);
+    min-height: 100vh;
+    padding: 15px;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(255, 180, 120, 0.15);
+    overflow: hidden;
+}
+
+/* スタート画面 */
+.start-header {
+    background: linear-gradient(135deg, #FFD7B5 0%, #FFB380 100%);
+    padding: 40px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.start-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.start-main {
+    padding: 30px 20px;
+}
+
+.intro-box {
+    background: #FFF9F5;
+    border: 2px solid #FFD7B5;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.intro-box h2 {
+    font-size: 1.2rem;
+    color: #E07A5F;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.intro-box p {
+    font-size: 0.95rem;
+    color: #555555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.intro-box p:last-child {
+    margin-bottom: 0;
+}
+
+.intro-box strong {
+    color: #E07A5F;
+    font-weight: 700;
+}
+
+.info-box {
+    background: #FFFFFF;
+    border: 2px solid #FFE5CC;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-box p {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.info-box strong {
+    color: #E07A5F;
+    font-weight: 700;
+}
+
+.start-button {
+    width: 100%;
+    background: linear-gradient(135deg, #FFD7B5 0%, #FFB380 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 18px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+    transition: all 0.3s ease;
+}
+
+.start-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+}
+
+.start-button:active {
+    transform: translateY(0);
+}
+
+/* プログレスバー */
+.progress-bar {
+    position: relative;
+    height: 50px;
+    background: #FFF9F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #FFD7B5 0%, #FFB380 100%);
+    transition: width 0.5s ease;
+    width: 0;
+}
+
+.progress-text {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #E07A5F;
+}
+
+/* 質問画面 */
+.quiz-main {
+    padding: 30px 20px;
+}
+
+.question-box {
+    margin-bottom: 30px;
+}
+
+.question-number {
+    font-size: 0.9rem;
+    color: #E07A5F;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    color: #333333;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-button {
+    background: #FFFFFF;
+    border: 2px solid #FFE5CC;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.answer-button:hover {
+    background: #FFF9F5;
+    border-color: #FFD7B5;
+    transform: translateX(5px);
+}
+
+.answer-button:active {
+    transform: scale(0.98);
+}
+
+/* 結果画面 */
+.result-header {
+    background: linear-gradient(135deg, #FFD7B5 0%, #FFB380 100%);
+    padding: 30px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.result-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.result-main {
+    padding: 30px 20px;
+}
+
+.result-type {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.result-type h2 {
+    font-size: 1.6rem;
+    color: #E07A5F;
+    font-weight: 700;
+    background: linear-gradient(transparent 60%, #FFE5CC 60%);
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.result-image {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.result-section {
+    background: #FFF9F5;
+    border: 2px solid #FFE5CC;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.result-section h3 {
+    font-size: 1.1rem;
+    color: #E07A5F;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.result-section p,
+.result-section li {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.8;
+}
+
+.result-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.result-section li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.result-section li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #FFB380;
+    font-weight: 700;
+}
+
+.advice-section {
+    background: linear-gradient(135deg, #FFF9F5 0%, #FFE5CC 30%);
+    border: 3px solid #FFD7B5;
+}
+
+.shop-link {
+    margin: 30px 0 20px;
+}
+
+.shop-link a {
+    display: block;
+    background: linear-gradient(135deg, #FFD7B5 0%, #FFB380 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(255, 180, 120, 0.3);
+    transition: all 0.3s ease;
+}
+
+.shop-link a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 180, 120, 0.4);
+}
+
+.retry-button {
+    width: 100%;
+    background: #FFFFFF;
+    color: #E07A5F;
+    border: 2px solid #FFD7B5;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.retry-button:hover {
+    background: #FFF9F5;
+    transform: translateY(-2px);
+}
+
+/* フッター */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #FFF9F5;
+    border-top: 2px solid #FFE5CC;
+}
+
+.signature {
+    font-size: 1rem;
+    color: #E07A5F;
+    font-weight: 700;
+}
+
+/* スマホ対応 */
+@media (max-width: 375px) {
+    .start-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .question-text {
+        font-size: 1.2rem;
+    }
+    
+    .result-type h2 {
+        font-size: 1.4rem;
+    }
+}
