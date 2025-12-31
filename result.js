@@ -2,7 +2,7 @@
 const resultData = {
     'morning-rough': {
         type: '朝活ざっくりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/uTr7KB80?cache_control=3600',
+        image: 'images/morning.jpg',
         feature: '朝の時間を有効活用して、前日の支出をざっくりまとめて記録するあなた。細かいことは気にせず、全体の流れを把握するのが得意です。朝の清々しい時間に家計簿タイムを作ることで、1日を前向きにスタートできます。',
         method: [
             '朝のルーティンに「家計簿タイム5分」を組み込む',
@@ -13,7 +13,7 @@ const resultData = {
     },
     'morning-detailed': {
         type: '朝活きっちりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/uTr7KB80?cache_control=3600',
+        image: 'images/morning.jpg',
         feature: '朝の時間を使って、前日の支出をしっかり記録するあなた。項目ごとに分けて、きちんと管理することで安心感を得られます。朝の集中力を活かして、家計簿を丁寧に仕上げるのが得意です。',
         method: [
             '朝のルーティンに「家計簿タイム10〜15分」を確保',
@@ -24,7 +24,7 @@ const resultData = {
     },
     'night-rough': {
         type: '夜まとめざっくりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/bGdTGQdb?cache_control=3600',
+        image: 'images/night.jpg',
         feature: '1日の終わりに、その日の支出をざっくりまとめて記録するあなた。夜のリラックスタイムに、軽く振り返るだけでOK。細かいことは気にせず、全体の流れを把握するのが得意です。',
         method: [
             '夜のリラックスタイムに「家計簿タイム5分」を組み込む',
@@ -35,7 +35,7 @@ const resultData = {
     },
     'night-detailed': {
         type: '夜まとめきっちりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/bGdTGQdb?cache_control=3600',
+        image: 'images/night.jpg',
         feature: '1日の終わりに、その日の支出をしっかり記録するあなた。項目ごとに分けて、きちんと管理することで安心感を得られます。夜の落ち着いた時間に、丁寧に家計簿を仕上げるのが得意です。',
         method: [
             '夜のリラックスタイムに「家計簿タイム10〜15分」を確保',
@@ -46,7 +46,7 @@ const resultData = {
     },
     'weekly-rough': {
         type: '週末ざっくりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/33VEsOuL?cache_control=3600',
+        image: 'images/weekend.jpg',
         feature: '週に1回、週末にまとめて記録するあなた。毎日書くのは面倒だけど、週単位で振り返ることで、全体の流れを把握できます。ざっくり記録するだけでOKなので、続けやすいタイプです。',
         method: [
             '週末の空いた時間に「家計簿タイム15〜20分」を確保',
@@ -57,7 +57,7 @@ const resultData = {
     },
     'weekly-detailed': {
         type: '週末きっちりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/33VEsOuL?cache_control=3600',
+        image: 'images/weekend.jpg',
         feature: '週に1回、週末にまとめて細かく記録するあなた。毎日書くのは面倒だけど、週単位でしっかり振り返ることで、家計の流れを把握できます。項目ごとに分けて記録することで、節約ポイントも見つけやすくなります。',
         method: [
             '週末の空いた時間に「家計簿タイム30〜40分」を確保',
@@ -68,7 +68,7 @@ const resultData = {
     },
     'monthly-rough': {
         type: '月末ざっくりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/7QVExvUb?cache_control=3600',
+        image: 'images/monthly.jpg',
         feature: '月に1回、月末にまとめて記録するあなた。毎日や毎週書くのは面倒だけど、月単位で振り返ることで、全体の流れを把握できます。ざっくり記録するだけでOKなので、続けやすいタイプです。',
         method: [
             '月末の空いた時間に「家計簿タイム30〜40分」を確保',
@@ -79,7 +79,7 @@ const resultData = {
     },
     'monthly-detailed': {
         type: '月末きっちりタイプ',
-        image: 'https://www.genspark.ai/api/files/s/7QVExvUb?cache_control=3600',
+        image: 'images/monthly.jpg',
         feature: '月に1回、月末にまとめて細かく記録するあなた。毎日や毎週書くのは面倒だけど、月単位でしっかり振り返ることで、家計の流れを把握できます。項目ごとに分けて記録することで、節約ポイントも見つけやすくなります。',
         method: [
             '月末の空いた時間に「家計簿タイム1時間」を確保',
@@ -90,7 +90,7 @@ const resultData = {
     },
     'digital': {
         type: 'デジタルタイプ',
-        image: 'https://www.genspark.ai/api/files/s/0JdXRNcv?cache_control=3600',
+        image: 'images/digital.jpg',
         feature: 'スマホやPCで家計管理をするのが得意なあなた。手書きよりもデジタルの方が便利で、自動連携やグラフ機能を活用して、効率的に家計を管理できます。スマホがあればいつでもどこでも記録できるのが魅力です。',
         method: [
             '家計簿アプリ（マネーフォワード、Zaim、LINE家計簿など）を活用',
